@@ -1,0 +1,128 @@
+:root {
+  --light-brown: #D3BFA5;
+  --cream: #F3EDE1;
+  --dark-brown: #5E4C3A;
+  --black: #000000;
+  --text-muted: #7D6E60;
+  --accent-color: #8C6A47;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--cream);
+  color: var(--dark-brown);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px;
+}
+
+header, footer {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: var(--dark-brown);
+  margin: 0.5rem 0;
+}
+
+header p {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.section-header {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--dark-brown);
+  margin: 2rem 0 1rem;
+}
+
+.card-container {
+  background-color: var(--cream);
+  border: 1px solid var(--light-brown);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.text-muted-foreground {
+  color: var(--text-muted);
+}
+
+.badge {
+  background-color: var(--light-brown);
+  color: var(--dark-brown);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  display: inline-block;
+  margin: 0.2rem;
+}
+
+.tabs-list {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid var(--light-brown);
+  margin-bottom: 1rem;
+}
+
+.tabs-trigger {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: var(--text-muted);
+  background-color: transparent;
+  border: none;
+}
+
+.tabs-trigger.active {
+  color: var(--dark-brown);
+  font-weight: bold;
+  border-bottom: 2px solid var(--accent-color);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.button-primary {
+  background-color: var(--dark-brown);
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button-primary:hover {
+  background-color: var(--accent-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-outline {
+  background-color: transparent;
+  border: 2px solid var(--dark-brown);
+  color: var(--dark-brown);
+}
+
+.button-outline:hover {
+  background-color: var(--dark-brown);
+  color: white;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}

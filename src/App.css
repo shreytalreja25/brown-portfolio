@@ -1,0 +1,52 @@
+:root {
+  --light-brown: #D3BFA5;
+  --cream: #F3EDE1;
+  --dark-brown: #5E4C3A;
+  --black: #000000;
+  --text-muted: #7D6E60;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--cream);
+  color: var(--dark-brown);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px;
+}
+
+.text-muted-foreground {
+  color: var(--text-muted);
+}
+
+header, footer {
+  text-align: center;
+}
+
+button {
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.button-primary {
+  background-color: var(--dark-brown);
+  color: white;
+}
+
+.button-outline {
+  border: 2px solid var(--dark-brown);
+  color: var(--dark-brown);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 8px;
+  }
+}

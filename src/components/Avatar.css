@@ -1,0 +1,22 @@
+.avatar-container {
+    width: 96px; /* 24px smaller than the original 128px */
+    height: 96px;
+    border-radius: 50%; /* Makes the image circular */
+    overflow: hidden;
+    background-color: var(--dark-brown); /* Fallback background color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .avatar-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+  }
+  
+  .avatar-fallback {
+    font-size: 1.5rem; /* Adjust font size for initials if there's no image */
+    color: white;
+  }
+  
