@@ -50,7 +50,7 @@ export default function Home() {
   return (
     <div className="container mx-auto px-4 py-8">
       <header style={{display:"flex",flexDirection:"column",alignItems:"center"}} className="mb-12 text-center">
-        <Avatar src="../../public/avatar.jpeg" alt="Jasmit Kaur" fallback="JK" />
+        <Avatar src="/avatar.jpeg" alt="Jasmit Kaur" fallback="JK" />
         <h1 className="text-4xl font-bold">Jasmit Kaur</h1>
         <p className="text-xl text-muted-foreground">Development Studies | Policy Analysis | Community Engagement</p>
       </header>
